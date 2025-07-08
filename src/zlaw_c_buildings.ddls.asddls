@@ -35,31 +35,34 @@ define root view entity ZLAW_C_Buildings
       @UI: { lineItem: [{ position: 10 }],
       identification: [{ position: 10 }],
       selectionField: [{ position: 10 }] }
+      @EndUserText.label: 'Building ID'
   key BuildingId,
       @UI: { lineItem: [{ position: 20 }],
       identification: [{ position: 20 }],
       selectionField: [{ position: 20 }] }
+      @EndUserText.label: 'Building Name'
       BuildingName,
       @UI: { lineItem: [{ position: 30 }],
       identification: [{ position: 30 }] }
+      @EndUserText.label: 'Number of rooms'
       NRooms,
 
-      @UI.fieldGroup: [{ qualifier: 'Address', position: 10 }]
+      @UI.fieldGroup: [{ qualifier: 'Address', position: 10, label: 'Address Line' }]
       AddressLine,
-      @UI.fieldGroup: [{ qualifier: 'Address', position: 20 }]
+      @UI.fieldGroup: [{ qualifier: 'Address', position: 20, label: 'City' }]
       City,
-      @UI.fieldGroup: [{ qualifier: 'Address', position: 30 }]
+      @UI.fieldGroup: [{ qualifier: 'Address', position: 30, label: 'State' }]
       State,
-      @UI.fieldGroup: [{ qualifier: 'Address', position: 40 }]
+      @UI.fieldGroup: [{ qualifier: 'Address', position: 40, label: 'Country' }]
       Country,
 
-      @UI.fieldGroup: [{ qualifier: 'ChangeLog', position: 10 }]
+      @UI.fieldGroup: [{ qualifier: 'ChangeLog', position: 10, label: 'Created By' }]
       CreatedBy,
-      @UI.fieldGroup: [{ qualifier: 'ChangeLog', position: 20 }]
+      @UI.fieldGroup: [{ qualifier: 'ChangeLog', position: 20, label: 'Created At' }]
       CreatedAt,
-      @UI.fieldGroup: [{ qualifier: 'ChangeLog', position: 30 }]
+      @UI.fieldGroup: [{ qualifier: 'ChangeLog', position: 30, label: 'Last Changed By' }]
       LastChangedBy,
-      @UI.fieldGroup: [{ qualifier: 'ChangeLog', position: 40 }]
+      @UI.fieldGroup: [{ qualifier: 'ChangeLog', position: 40, label: 'Last Changed At'}]
       LastChangedAt,
 
       @UI.hidden: true

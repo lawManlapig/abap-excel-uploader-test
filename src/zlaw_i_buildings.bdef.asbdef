@@ -5,6 +5,7 @@ define behavior for ZLAW_I_Buildings alias Building
 persistent table zlaw_buildings
 lock master
 authorization master ( instance )
+late numbering
 //etag master <field_name>
 {
   create;
